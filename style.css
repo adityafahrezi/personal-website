@@ -54,7 +54,7 @@ nav a{
   top: 44px;
   right: 15px;
   background-color: white;
-  color: royalblue;
+  color: green;
   padding: 3px 18px;
   border-radius: 10px;
   box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.6);
@@ -90,9 +90,10 @@ nav a.appear{
 /*===*/
 
 .profile{
-  margin: 60px 10px 0;
+  margin: 60px 15px 10px;
   display: flex;
   align-items: center;
+  padding-bottom: 15px;
 }
 
 .profile-picture{
@@ -100,13 +101,60 @@ nav a.appear{
   border-radius: 50%;
 }
 
-.about-me{
+.biodata{
   margin-left: 10px;
 }
 
-.about-me .description{
+.biodata .about-me{
   color: gray;
   position: relative;
   bottom: 5px;
   font-size: 15px;
+}
+
+.skills .part{
+  font-weight: 500;
+  border: 1px solid black;
+  padding-left: 3px;
+  width: 65px;
+  background-color: #333333;
+  color: white;
+  clip-path: polygon(0 0,100% 0,80% 50%,100% 100%,0 100%);
+}
+
+.skills{
+  overflow: hidden;
+}
+
+.skills .skill{
+  height: 44px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  margin: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(400%);
+  animation: mySkill 1s forwards;
+  animation-delay: .3s;
+}
+
+.skill .name{
+  margin-left: 10px;
+}
+
+.skill img{
+  width: 25px;
+  margin: 8px 10px 0;
+}
+
+/*skills animation*/
+@keyframes mySkill{
+  0%{
+    transform: translateY(400%);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }

@@ -37,16 +37,6 @@ nav{
   margin: 0 2px;
 }
 
-nav .logo{
-  width: 20px;
-  height: 20px;
-  background-color: black;
-  clip-path: polygon(0 100%,50% 0,100% 100%,80% 100%,50% 40%,20% 100%);
-  position: fixed;
-  top: 12px;
-  left: 15px;
-}
-
 nav a{
   font-weight: 500;
   font-size: 15px;
@@ -116,7 +106,7 @@ nav a.appear{
   font-weight: 500;
   border: 1px solid black;
   padding-left: 3px;
-  width: 90px;
+  width: 65px;
   background-color: #333333;
   color: white;
   clip-path: polygon(0 0,100% 0,80% 50%,100% 100%,0 100%);
@@ -160,10 +150,14 @@ nav a.appear{
   }
 }
 
+.projects-section{
+  width: 90px;
+}
+
 .projects .image{
   display: flex;
   overflow: hidden;
-  margin: 10px 15px;
+  margin: 10px 15px 20px 15px;
 }
 
 .projects img{
@@ -181,4 +175,43 @@ nav a.appear{
   100%{
     transform: translateX(-427%);
   }
+}
+
+.contact-section{
+  width: 92px;
+}
+
+.contact{
+  margin: 10px 15px 40px 15px;
+}
+
+.email,.address{
+  font-weight: 500;
+  margin: 27px 0;
+}
+
+.email+a,.address+p{
+  font-size: 15px;
+}
+
+.email+a{
+  color: royalblue;
+}
+
+.end img{
+  width: 20px;
+}
+
+.end{
+  height: 100px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+}
+
+.end p{
+  font-size: 13px;
 }

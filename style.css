@@ -215,3 +215,18 @@ nav a.appear{
 .end p{
   font-size: 13px;
 }
+
+@media only screen and (min-width: 500px){
+  .projects img{
+    animation: none;
+    width: 100px;
+  }
+  
+  .projects img:nth-child(5){display: none;}
+  .projects img:nth-child(6){display: none;}
+  .projects img:nth-child(7){display: none;}
+  
+  .projects .image{
+    justify-content: center;
+  }
+}

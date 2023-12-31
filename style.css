@@ -54,7 +54,7 @@ nav a{
   top: 44px;
   right: 15px;
   background-color: white;
-  color: green;
+  color: royalblue;
   padding: 3px 18px;
   border-radius: 10px;
   box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.6);
@@ -112,11 +112,11 @@ nav a.appear{
   font-size: 15px;
 }
 
-.skills .part{
+.part{
   font-weight: 500;
   border: 1px solid black;
   padding-left: 3px;
-  width: 65px;
+  width: 90px;
   background-color: #333333;
   color: white;
   clip-path: polygon(0 0,100% 0,80% 50%,100% 100%,0 100%);
@@ -124,6 +124,7 @@ nav a.appear{
 
 .skills{
   overflow: hidden;
+  margin-bottom: 15px;
 }
 
 .skills .skill{
@@ -156,5 +157,28 @@ nav a.appear{
   }
   100%{
     transform: translateY(0);
+  }
+}
+
+.projects .image{
+  display: flex;
+  overflow: hidden;
+  margin: 10px 15px;
+}
+
+.projects img{
+  width: 150px;
+  animation: slideshow 21s linear infinite;
+  margin: 0 5px;
+  border-radius: 10px;
+}
+
+/*projects animation*/
+@keyframes slideshow{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-427%);
   }
 }
